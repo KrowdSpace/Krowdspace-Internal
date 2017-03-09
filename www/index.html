@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Krowdspace Internal Interface</title>
+        <meta name="Krowdspace Internal Interface">
+        <meta name="Mason Halstead">
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/fav/krowdspace-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-icon-57x57px.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114px.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-icon-144x144.png"/>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/interface.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script src="js/interface.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-5 navbar-brand"><a href="http://www.krowdspace.com" target="_blank"><strong>KROWDSPAC<span class="navbar-brand-small">e</span></strong></a></div>
+            <div class="col-7 text-right">
+                <a href="https://www.facebook.com/Krowdspaced" target="_blank">
+                <span class="fa-stack fa fa-lg">
+                <i class="fa fa-circle fa-stack-2x" ></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                </a>
+                <a href="https://www.pinterest.com/Krowdspace" target="_blank">
+                <span class="fa-stack fa fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                </span>
+                </a>
+                <a href="https://www.twitter.com/Krowdspaced" target="_blank">
+                <span class="fa-stack fa fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                </a>
+                <a href="https://www.instagram.com/Krowdspace" target="_blank">
+                <span class="fa-stack fa fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+                </a>
+                <a href="https://www.youtube.com/channel/UC129WlShlE3xIcwu1ZZfwEA" target="_blank">
+                <span class="fa-stack fa fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                </span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-1 col-10 app-info">
+                <p>With our internal application you can see registered users or find out what comments need to be responded to. We will also need to check who is submitting their project for Krowdspace approval. Go to the approval tab and verify that the reward offered matches our guidlines and approve it for our explore page card.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1"><strong>Register</strong></li>
+                    <li class="tab-link" data-tab="tab-2"><strong>Contact</strong></li>
+                    <li class="tab-link" data-tab="tab-3"><strong>Approval</strong></li>
+                </ul>
+                <div id="tab-1" class="tab-content current">
+                    <table id="register" class="text-left">
+                        <thead>
+                            <tr style="background: #7dbcd1">
+                                <th>
+                                    FNAME
+                                </th>
+                                <th>
+                                    LNAME
+                                </th>
+                                <th>
+                                    EMAIL
+                                </th>
+                                <th>
+                                    KSUSER
+                                </th>
+                                <th>
+                                    IGUSER
+                                </th>
+                                <th>
+                                    PROJECT
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- INSERT JSON INFORMATION HERE WITH SCRIPT ID #REGISTER -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <table id="contact" class="text-left">
+                        <thead>
+                            <tr style="background: #7dbcd1">
+                                <th>
+                                    FNAME
+                                </th>
+                                <th>
+                                    LNAME
+                                </th>
+                                <th>
+                                    EMAIL
+                                </th>
+                                <th>
+                                    MESSAGE
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- INSERT JSON INFORMATION HERE WITH SCRIPT ID #CONTACT -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <table id="approve" class="text-left">
+                        <thead>
+                            <tr style="background: #7dbcd1">
+                                <th>
+                                    FNAME
+                                </th>
+                                <th>
+                                    LNAME
+                                </th>
+                                <th>
+                                    PROJECTURL
+                                </th>
+                                <th>
+                                    REWARD
+                                </th>
+                                <th>
+                                    APPROVAL
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- INSERT JSON INFORMATION HERE WITH SCRIPT ID #APPROVE -->
+                        </tbody>
+                    </table>
+                    <div class="offset-10 col-2 text-center">
+                        <input type="submit" class="btn" name="submit" value="Approve">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer">
+            <p>Copyright &copy; Krowdspace 2017</p>
+        </div>
+    </body>
+</html>
